@@ -121,7 +121,7 @@ func (f *formatState) formatPtr(v reflect.Value) {
 	// Keep list of all dereferenced pointers to possibly show later.
 	pointerChain := make([]uintptr, 0)
 
-	// Figure out how many levels of indirection there are by derferencing
+	// Figure out how many levels of indirection there are by dereferencing
 	// pointers and unpacking interfaces down the chain while detecting circular
 	// references.
 	nilFound := false
@@ -405,12 +405,12 @@ types similar to the standard %v format specifier.
 
 The custom formatter only responds to the %v (most compact), %+v (adds pointer
 addresses), %#v (adds types), or %#+v (adds types and pointer addresses) verb
-combinations.  Any other verbs such as %x and %q will be sent to the the
+combinations.  Any other verbs such as %x and %q will be sent to the
 standard fmt package for formatting.  In addition, the custom formatter ignores
 the width and precision arguments (however they will still work on the format
 specifiers not handled by the custom formatter).
 
-Typically this function shouldn't be called directly.  It is much easier to make
+Typically, this function shouldn't be called directly.  It is much easier to make
 use of the custom formatter by calling one of the convenience functions such as
 Printf, Println, or Fprintf.
 */

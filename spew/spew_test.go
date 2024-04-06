@@ -143,7 +143,7 @@ func initSpewTests() {
 	}
 	tptr := &ptrTester{s: &struct{}{}}
 
-	// depthTester is used to test max depth handling for structs, array, slices
+	// depthTester is used to test max depth handling for structs, array, slices,
 	// and maps.
 	type depthTester struct {
 		ic    indirCir1
